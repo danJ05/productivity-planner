@@ -92,8 +92,8 @@
             "staging": {
               "buildTarget": "productivity-planner:build:staging"
             },
-            "development": {
-              "buildTarget": "productivity-planner:build:development"
+            "dev": {
+              "buildTarget": "productivity-planner:build:dev"
             }
           },
           "defaultConfiguration": "dev"
