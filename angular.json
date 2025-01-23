@@ -69,7 +69,7 @@
                 }
               ]
             },
-            "dev": {
+            "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
@@ -92,8 +92,8 @@
             "staging": {
               "buildTarget": "productivity-planner:build:staging"
             },
-            "dev": {
-              "buildTarget": "productivity-planner:build:dev"
+            "development": {
+              "buildTarget": "productivity-planner:build:development"
             }
           },
           "defaultConfiguration": "dev"
