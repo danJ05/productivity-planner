@@ -14,7 +14,7 @@
     "deploy:staging": "npm run build:staging && firebase use staging && firebase deploy",
     "deploy:production": "npm run build:production && firebase use production && firebase deploy",
     "deploy:development": "npm run build:development && firebase use development && firebase deploy",
-    "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "test:ci": "jest",
     "lint": "ng lint"
   },
   "private": true,
