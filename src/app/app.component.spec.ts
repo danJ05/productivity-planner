@@ -1,18 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http';
-import {AuthenticationService} from './core/authentication.service';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        AppComponent,
-        HttpClientModule // Ajout du HttpClientModule
-      ],
-      providers: [
-        AuthenticationService // Ajout du service d'authentification
-      ]
+      imports: [AppComponent],
     }).compileComponents();
   });
 
