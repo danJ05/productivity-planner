@@ -42,14 +42,14 @@ jobs:
 
       # Tests
       - name: Test
-        run: npm run test:ci
+        run: npm run test
 
       # Set environment variables
       - name: Create environment file
         run: |
           mkdir environments
           echo "Creating production environment file..."
-          echo "${{ secrets.FIREBASE_CONFIG }}" >> environments/environment.ts
+          echo "${{ secrets.ENVIRONMENT_PRODUCTION_FILE }}" >> environments/environment.ts
 
       # Build
       - name: Build
