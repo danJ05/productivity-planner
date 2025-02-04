@@ -1,0 +1,16 @@
+<div class="grid justify-content-center mt-5">
+  @for (feature of featuresCardList(); track feature.name) {
+    <div class="col-12 md:col-4">
+      <p-card data-testid="feature-card">
+        <ng-template pTemplate="header">
+          <h3 data-testid="feature-card-title">{{ feature.name }}</h3>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <i class="pi fs-1 text-warning" [ngClass]="'pi-' + feature.icon"></i>
+          <p>{{ feature.description }}</p>
+        </ng-template>
+      </p-card>
+    </div>
+  }
+</div>
+
