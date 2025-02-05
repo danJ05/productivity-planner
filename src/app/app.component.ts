@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {Button} from 'primeng/button';
+import {NavbarSmartComponent} from './core/navbar/navbar.smart.component';
 
 
 
@@ -9,7 +9,7 @@ import {Button} from 'primeng/button';
   standalone: true,
   imports: [
     RouterOutlet,
-    Button
+    NavbarSmartComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
