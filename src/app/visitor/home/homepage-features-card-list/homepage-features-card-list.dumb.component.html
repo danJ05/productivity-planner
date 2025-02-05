@@ -1,16 +1,25 @@
-<div class="grid justify-content-center mt-5">
-  @for (feature of featuresCardList(); track feature.name) {
-    <div class="col-12 md:col-4">
-      <p-card data-testid="feature-card">
-        <ng-template pTemplate="header">
-          <h3 data-testid="feature-card-title">{{ feature.name }}</h3>
-        </ng-template>
-        <ng-template pTemplate="content">
-          <i class="pi fs-1 text-warning" [ngClass]="'pi-' + feature.icon"></i>
-          <p>{{ feature.description }}</p>
-        </ng-template>
-      </p-card>
-    </div>
-  }
+<div class="flex justify-content-center mt-5">
+  <div class="grid w-full lg:w-8">
+    @for (feature of featuresCardList(); track feature.name) {
+      <div class="col-12 md:col-4 flex justify-content-center">
+        <p-card class="w-full text-center  p-3" data-testid="feature-card">
+          <ng-template pTemplate="header">
+            <h3 class="text-xl font-bold mb-2 pt-2" data-testid="feature-card-title">
+              {{ feature.name }}
+            </h3>
+          </ng-template>
+          <ng-template pTemplate="content">
+            <div class="flex flex-column align-items-center">
+              <i class="pi fs-2 text-warning mb-3" [ngClass]="'pi-' + feature.icon"></i>
+              <p class="text-sm text-gray-700">{{ feature.description }}</p>
+            </div>
+          </ng-template>
+        </p-card>
+      </div>
+    }
+  </div>
 </div>
+
+
+
 

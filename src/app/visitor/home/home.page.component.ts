@@ -27,7 +27,7 @@ export class HomePageComponent {
     },
     {
       name: 'Atteindre ses objectifs',
-      icon: 'trophy',
+      icon: 'flag',
       description: 'Priorisation des tâches',
     },
     {
