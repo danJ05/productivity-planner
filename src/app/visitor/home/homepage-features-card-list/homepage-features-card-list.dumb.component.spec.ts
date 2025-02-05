@@ -9,7 +9,6 @@ describe('HomepageFeaturesCardListDumbComponent', () => {
   let component: HomepageFeaturesCardListDumbComponent;
   let fixture: ComponentFixture<HomepageFeaturesCardListDumbComponent>;
   let cardList: DebugElement[];
-  let cardTitleList: DebugElement[];
 
   const featureCardList: FeatureCardList = [
     { name: 'Feature 1', description: 'Description 1', icon: 'star' },
@@ -32,9 +31,7 @@ describe('HomepageFeaturesCardListDumbComponent', () => {
     cardList = fixture.debugElement.queryAll(
       By.css('[data-testid="feature-card"]')
     );
-    cardTitleList = fixture.debugElement.queryAll(
-      By.css('[data-testid="feature-card-title"]')
-    );
+
   });
 
   it('should create', () => {
