@@ -1,0 +1,17 @@
+<div class="banner">
+  <p-card class="banner-card">
+    <div class="banner-content">
+      <h1 data-testid="banner-title">{{ title() }}</h1>
+      <p data-testid="banner-description">{{ description() }}</p>
+      <button
+        pButton
+        type="button"
+        class="banner-button"
+        (click)="clicked.emit()"
+        data-testid="banner-button"
+      >
+        {{ button() }}
+      </button>
+    </div>
+  </p-card>
+</div>

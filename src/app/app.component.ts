@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
+import {Button} from 'primeng/button';
 
 
 
@@ -7,7 +8,8 @@ import {RouterOutlet} from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet
+    RouterOutlet,
+    Button
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
